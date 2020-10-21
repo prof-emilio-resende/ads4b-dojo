@@ -4,3 +4,4 @@ class CalculadoraInss(object):
 
     def calcular(self):
         return self.salario_bruto * 0.11
+
