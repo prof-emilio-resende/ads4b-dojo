@@ -1,5 +1,5 @@
 import pytest
-from domain.logic import CalculdoraInss
+from domain.logic import CalculadoraInss
 
 def test_calculadora_inss():
   #arrange
@@ -8,7 +8,8 @@ def test_calculadora_inss():
   esperado = 330
 
   #act
-  result = CalculdoraInss(valor_salario).calcular()
+  result = CalculadoraInss(valor_salario)
+  print(type(result))
 
   #assert
-  assert result == esperado
+  assert result.calcular() == esperado
