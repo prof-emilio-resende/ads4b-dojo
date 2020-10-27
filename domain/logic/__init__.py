@@ -1,1 +1,2 @@
 from domain.logic.CalculadoraInss import CalculadoraInss
+from domain.logic.CalculadoraDedutor import CalculadoraDedutor
