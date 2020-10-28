@@ -1,2 +1,3 @@
 from domain.logic.CalculadoraInss import CalculadoraInss
 from domain.logic.CalculadoraDedutor import CalculadoraDedutor
+from domain.logic.matriz_enquadramento import MatrizEnquadramento
