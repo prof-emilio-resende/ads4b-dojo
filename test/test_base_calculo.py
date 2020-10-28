@@ -1,15 +1,15 @@
 import pytest
-from domain.logic import BaseCalculo
+from domain.logic.matriz_enquadramento import MatrizEnquadramento
 
 
 def test_BaseCalculo():
     salario = 2000.00
-    esperado = BaseCalculo()
+    esperado = MatrizEnquadramento(salario)
     esperado.texto = "De 1903,99 até 2826,65"
     esperado.aliquota = 7.5
 
-    base = BaseCalculo()
-    resultado = base.calcular(salario)
+    base = MatrizEnquadramento(salario)
+    resultado = base.enquadrar()
 
     #assert
-    assert esperado == resultado
+    assert esperado.texto == resultado.texto
